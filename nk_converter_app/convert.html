@@ -1,0 +1,52 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>NK Converter App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="input">
+            
+            <h1>NK UNIT CONVERTER</h1>
+            <p class="inst">
+                Enter a number to convert
+            </p>
+            <input type="number" id="inp"></input>
+            <br>
+            <button type="button" onclick="convert()">
+                CONVERT
+            </button>
+        </div>
+        <div class="res-bg">
+            <div class="length">
+                <p class="res-head">LENGTH (Meter/Feet)</p>
+                <p class="res-val">
+                    <span class="inp-val">0</span> m = <span id="m-to-f">0.000</span> ft | 
+                    <span class="inp-val">0</span> ft = <span id="f-to-m">0.000</span> m
+                </p>
+                <hr>
+            </div>
+            <div class="volume">
+                <p class="res-head">VOLUME (Liters/Gallons)</p>
+                <p class="res-val">
+                    <span class="inp-val">0</span> l = <span id="l-to-g">0.000</span> gal | 
+                    <span class="inp-val">0</span> gal = <span id="g-to-l">0.000</span> l
+                </p>
+                <hr>
+            </div>
+            <div class="mass">
+                <p class="res-head">MASS (Kilograms/Pounds)</p>
+                <p class="res-val">
+                    <span class="inp-val">0</span> kg = <span id="k-to-p">0.000</span> lb | 
+                    <span class="inp-val">0</span> lb = <span id="p-to-k">0.000</span> kg
+                </p>
+            </div>
+        </div>
+        <p>Built by Ali Mora using JavaScript | 2022</p>
+        <button type="button">
+          <a href="/index.html" style="text-decoration: none; color: white;">BACK</a>  
+        </button>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

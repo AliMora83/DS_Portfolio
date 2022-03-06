@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    height: 200px;
+    width: 400px;
+    background-color: #F5F5FA;
+    font-family: Mukta, sans-serif;
+
+}
+
+.input {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}
+
+.btn-text {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: Mukta;
+    font-style: normal;
+    background: #F5F5FA;
+    border-radius: 10px;
+    box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 1.20rem;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: 0.2rem;
+}
+
+p {
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+    color: grey;
+    letter-spacing: 0.05rem;
+}
+
+.inst {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: grey;
+    letter-spacing: 0.05rem;
+}
+
+#inp {
+    border: 1px #4e4e4e solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 800;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 50%;
+    margin: auto;   
+    background: black;
+    color: whitesmoke;
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+}
+
+.res-head{
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Mukta;
+}
+
+.res-val {
+    font-size: 14px;
+    text-align: center;
+    color: #6b6b6b;
+    font-family: Mukta;
+}
+
+.res-bg {
+    background: #F5F5FA;
+    border-radius: 10px;
+    box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.20rem;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+    color: grey;
+    width: 20vh;
+}
+
+button {
+    letter-spacing: 0.25rem;
+    width: 42vh;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+button:active {
+    color: #000
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
